@@ -1,4 +1,4 @@
-package pl.learing.numberToWords.old;
+package pl.learning.numberToWords.old;
 
 public class NumberDescriber {
 

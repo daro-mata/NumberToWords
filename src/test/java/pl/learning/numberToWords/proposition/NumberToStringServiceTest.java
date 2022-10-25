@@ -1,4 +1,4 @@
-package pl.learing.numberToWords.proposition;
+package pl.learning.numberToWords.proposition;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

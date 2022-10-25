@@ -1,6 +1,6 @@
-package pl.learing.numberToWords.proposition.service;
+package pl.learning.numberToWords.proposition.service;
 
-import pl.learing.numberToWords.proposition.pojo.DigitEnum;
+import pl.learning.numberToWords.proposition.pojo.DigitEnum;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,8 +1,8 @@
-package pl.learing.numberToWords.proposition;
+package pl.learning.numberToWords.proposition;
 
-import pl.learing.numberToWords.proposition.printer.StringConverter;
-import pl.learing.numberToWords.proposition.service.NumberService;
-import pl.learing.numberToWords.proposition.validator.NumberValidator;
+import pl.learning.numberToWords.proposition.printer.StringConverter;
+import pl.learning.numberToWords.proposition.service.NumberService;
+import pl.learning.numberToWords.proposition.validator.NumberValidator;
 
 import java.util.List;
 

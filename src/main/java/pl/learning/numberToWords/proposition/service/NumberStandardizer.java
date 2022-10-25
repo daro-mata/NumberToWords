@@ -1,4 +1,4 @@
-package pl.learing.numberToWords.proposition.service;
+package pl.learning.numberToWords.proposition.service;
 
 public class NumberStandardizer {
 

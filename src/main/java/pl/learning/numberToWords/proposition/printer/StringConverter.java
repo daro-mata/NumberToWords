@@ -1,4 +1,4 @@
-package pl.learing.numberToWords.proposition.printer;
+package pl.learning.numberToWords.proposition.printer;
 
 import java.util.List;
 

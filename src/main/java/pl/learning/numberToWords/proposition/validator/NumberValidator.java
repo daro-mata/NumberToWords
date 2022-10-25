@@ -1,4 +1,4 @@
-package pl.learing.numberToWords.proposition.validator;
+package pl.learning.numberToWords.proposition.validator;
 
 public class NumberValidator implements Validator {
 

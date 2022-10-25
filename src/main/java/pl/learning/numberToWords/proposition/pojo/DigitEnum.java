@@ -1,4 +1,4 @@
-package pl.learing.numberToWords.proposition.pojo;
+package pl.learning.numberToWords.proposition.pojo;
 
 import java.util.Arrays;
 
