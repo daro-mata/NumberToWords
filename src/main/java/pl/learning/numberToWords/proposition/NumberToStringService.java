@@ -3,6 +3,7 @@ package pl.learning.numberToWords.proposition;
 import pl.learning.numberToWords.proposition.printer.StringConverter;
 import pl.learning.numberToWords.proposition.service.NumberService;
 import pl.learning.numberToWords.proposition.validator.NumberValidator;
+import pl.learning.numberToWords.proposition.validator.Validator;
 
 import java.util.List;
 
@@ -10,7 +11,7 @@ public class NumberToStringService {
 
     private final NumberService numberService;
     private final StringConverter converter;
-    private final NumberValidator numberValidator;
+    private final Validator numberValidator;
 
     public NumberToStringService() {
         this.numberService = new NumberService();
