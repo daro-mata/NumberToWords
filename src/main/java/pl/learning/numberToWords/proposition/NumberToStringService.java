@@ -27,7 +27,7 @@ public class NumberToStringService {
      * @param number - given number to be described by words
      * @return concatenated list of digits names
      */
-    public String getAsString(int number) {
+    public String describeWithWords(int number) {
         numberValidator.validate(number);
         List<String> digitList = numberService.getAsList(number);
         return converter.joinListElements(digitList);

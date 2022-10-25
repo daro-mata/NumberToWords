@@ -26,7 +26,7 @@ public class NumberToStringServiceTest {
         String expected = "One Nine Five Zero";
 
         //when
-        String returned = numberToStringService.getAsString(number);
+        String returned = numberToStringService.describeWithWords(number);
 
         //then
         assertEquals(expected, returned);
@@ -39,7 +39,7 @@ public class NumberToStringServiceTest {
         String expected = "Zero Zero Zero One";
 
         //when
-        String returned = numberToStringService.getAsString(number);
+        String returned = numberToStringService.describeWithWords(number);
 
         //then
         assertEquals(expected, returned);
@@ -59,7 +59,7 @@ public class NumberToStringServiceTest {
     public void shouldMapGivenNumberToString(int given, String expected) {
         //given
         //when
-        String returned = numberToStringService.getAsString(given);
+        String returned = numberToStringService.describeWithWords(given);
 
         //then
         assertEquals(expected, returned);
