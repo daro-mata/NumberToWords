@@ -5,11 +5,11 @@ import pl.learning.numberToWords.proposition.pojo.DigitEnum;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class NumberService {
+public class NumberToWordTranslator {
 
     private final NumberStandardizer standardizer;
 
-    public NumberService() {
+    public NumberToWordTranslator() {
         standardizer = new NumberStandardizer();
     }
 
@@ -26,7 +26,7 @@ public class NumberService {
      * @param number - given number
      * @return list of digits names
      */
-    public List<String> getAsList(int number) {
+    public List<String> getAsWordList(int number) {
         String numberAsString = standardizer.standardize(number);
 
         return numberAsString.chars()

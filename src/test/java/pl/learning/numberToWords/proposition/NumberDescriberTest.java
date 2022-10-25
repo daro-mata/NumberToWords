@@ -10,13 +10,13 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class NumberToStringServiceTest {
+public class NumberDescriberTest {
 
-    private NumberToStringService numberToStringService;
+    private NumberDescriber numberDescriber;
 
     @BeforeEach
     public void setup() {
-        this.numberToStringService = new NumberToStringService();
+        this.numberDescriber = new NumberDescriber();
     }
 
     @Test
@@ -26,7 +26,7 @@ public class NumberToStringServiceTest {
         String expected = "One Nine Five Zero";
 
         //when
-        String returned = numberToStringService.describeWithWords(number);
+        String returned = numberDescriber.describeWithWords(number);
 
         //then
         assertEquals(expected, returned);
@@ -39,7 +39,7 @@ public class NumberToStringServiceTest {
         String expected = "Zero Zero Zero One";
 
         //when
-        String returned = numberToStringService.describeWithWords(number);
+        String returned = numberDescriber.describeWithWords(number);
 
         //then
         assertEquals(expected, returned);
@@ -59,7 +59,7 @@ public class NumberToStringServiceTest {
     public void shouldMapGivenNumberToString(int given, String expected) {
         //given
         //when
-        String returned = numberToStringService.describeWithWords(given);
+        String returned = numberDescriber.describeWithWords(given);
 
         //then
         assertEquals(expected, returned);

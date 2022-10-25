@@ -1,20 +1,20 @@
 package pl.learning.numberToWords.proposition;
 
 import pl.learning.numberToWords.proposition.printer.StringConverter;
-import pl.learning.numberToWords.proposition.service.NumberService;
+import pl.learning.numberToWords.proposition.service.NumberToWordTranslator;
 import pl.learning.numberToWords.proposition.validator.NumberValidator;
 import pl.learning.numberToWords.proposition.validator.Validator;
 
 import java.util.List;
 
-public class NumberToStringService {
+public class NumberDescriber {
 
-    private final NumberService numberService;
+    private final NumberToWordTranslator numberToWordTranslator;
     private final StringConverter converter;
     private final Validator numberValidator;
 
-    public NumberToStringService() {
-        this.numberService = new NumberService();
+    public NumberDescriber() {
+        this.numberToWordTranslator = new NumberToWordTranslator();
         this.converter = new StringConverter();
         this.numberValidator = new NumberValidator();
     }
@@ -29,7 +29,7 @@ public class NumberToStringService {
      */
     public String describeWithWords(int number) {
         numberValidator.validate(number);
-        List<String> digitList = numberService.getAsList(number);
-        return converter.joinListElements(digitList);
+        List<String> digitsRepresentedByWords = numberToWordTranslator.getAsWordList(number);
+        return converter.joinListElements(digitsRepresentedByWords);
     }
 }
